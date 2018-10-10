@@ -55,6 +55,7 @@ map:
 # HUSBZB-1 USB stick
 zwave:
   usb_path: /dev/ttyUSB0
+  network_key: !secret z_wave_network_key
 
 zha:
   usb_path: /dev/ttyUSB1
