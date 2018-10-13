@@ -72,9 +72,11 @@ tts:
 # Cloud
 cloud:
 
-nest:
-  client_id: !secret nest_client_id
-  client_secret: !secret nest_client_secret
+ffmpeg:
+
+# nest:
+#   client_id: !secret nest_client_id
+#   client_secret: !secret nest_client_secret
 
 ring:
   username: !secret ring_username
