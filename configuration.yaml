@@ -39,7 +39,7 @@ updater:
 discovery:
   ignore:
     - panasonic_viera
-    - plex
+    - plex_mediaserver
 
 # Allows you to issue voice commands from the frontend in enabled browsers
 conversation:
