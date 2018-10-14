@@ -91,9 +91,10 @@ camera:
     ip: !secret foscam_1_ip
     username: !secret foscam_1_username
     password: !secret foscam_1_password
-  - platform: foscam
+  - platform: onvif
+    host: !secret foscam_2_ip 
+    port: !secret foscam_2_port
     name: !secret foscam_2_name
-    ip: !secret foscam_2_ip
     username: !secret foscam_2_username
     password: !secret foscam_2_password
 
