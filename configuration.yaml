@@ -74,9 +74,9 @@ cloud:
 
 ffmpeg:
 
-# nest:
-#   client_id: !secret nest_client_id
-#   client_secret: !secret nest_client_secret
+nest:
+  client_id: !secret nest_client_id
+  client_secret: !secret nest_client_secret
 
 ring:
   username: !secret ring_username
@@ -86,7 +86,6 @@ sensor:
   - platform: ring
 
 camera:
-  - platform: ring
   - platform: foscam
     name: !secret foscam_1_name
     ip: !secret foscam_1_ip
@@ -103,6 +102,9 @@ cover:
     username: !secret myq_username 
     password: !secret myq_password
     type: chamberlain
+
+climate:
+  - platform: nest
 
 weather:
   - platform: darksky
