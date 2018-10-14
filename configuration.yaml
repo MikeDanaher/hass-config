@@ -94,12 +94,9 @@ camera:
     ip: !secret foscam_1_ip
     username: !secret foscam_1_username
     password: !secret foscam_1_password
-  - platform: onvif
-    host: !secret foscam_2_ip 
-    port: !secret foscam_2_port
+  - platform: ffmpeg
+    input: !secret foscam_2_rtsp_input
     name: !secret foscam_2_name
-    username: !secret foscam_2_username
-    password: !secret foscam_2_password
 
 cover:
   - platform: myq
