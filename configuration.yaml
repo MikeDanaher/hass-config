@@ -12,6 +12,9 @@ homeassistant:
   time_zone: !secret home_time_zone
   # Customization file
   customize: !include customize.yaml
+  customize_domain:
+    zwave:
+      hidden: true
 
 # Show links to resources in log and frontend
 # introduction:
