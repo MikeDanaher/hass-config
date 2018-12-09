@@ -122,17 +122,9 @@ emulated_hue:
   expose_by_default: false
   exposed_domains:
     - switch
-    - cover
-    - lock
   entities:
     switch.christmas_tree:
       name: "Christmas Tree"
-      hidden: false
-    cover.garage_door:
-      name: "Garage Door"
-      hidden: false
-    lock.garage_deadbolt:
-      name: "Garage Deadbolt"
       hidden: false
 
 group: !include groups.yaml
