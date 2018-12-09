@@ -114,6 +114,25 @@ weather:
     api_key: !secret dark_sky_api_key
     mode: daily
 
+emulated_hue:
+  host_ip: 10.0.0.7
+  listen_port: 8300
+  expose_by_default: false
+  exposed_domains:
+    - switch
+    - cover
+    - lock
+  entities:
+    switch.christmas_tree:
+      name: "Christmas Tree"
+      hidden: false
+    cover.garage_door:
+      name: "Garage Door"
+      hidden: false
+    lock.garage_deadbolt:
+      name: "Garage Deadbolt"
+      hidden: false
+
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml

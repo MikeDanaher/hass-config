@@ -36,4 +36,4 @@
     entities:
       - binary_sensor.zha_0a785356_1
       - sensor.zha_0a785356_1_2820
-      - zha.zha_0a785356
+      - zha.peanut_plug
