@@ -84,6 +84,8 @@ ios:
 nest:
   client_id: !secret nest_client_id
   client_secret: !secret nest_client_secret
+  structure:
+    - Home
 
 ring:
   username: !secret ring_username
