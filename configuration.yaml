@@ -45,6 +45,8 @@ discovery:
   ignore:
     - panasonic_viera
     - plex_mediaserver
+    - apple_tv
+    - harmony
 
 # Allows you to issue voice commands from the frontend in enabled browsers
 conversation:
@@ -77,7 +79,7 @@ tts:
 # Cloud
 cloud:
 
-ffmpeg:
+# ffmpeg:
 
 ios:
 
@@ -94,15 +96,15 @@ ring:
 sensor:
   - platform: ring
 
-camera:
-  - platform: foscam
-    name: !secret foscam_1_name
-    ip: !secret foscam_1_ip
-    username: !secret foscam_1_username
-    password: !secret foscam_1_password
-  - platform: ffmpeg
-    input: !secret foscam_2_rtsp_input
-    name: !secret foscam_2_name
+# camera:
+#   - platform: foscam
+#     name: !secret foscam_1_name
+#     ip: !secret foscam_1_ip
+#     username: !secret foscam_1_username
+#     password: !secret foscam_1_password
+#   - platform: ffmpeg
+#     input: !secret foscam_2_rtsp_input
+#     name: !secret foscam_2_name
 
 cover:
   - platform: myq
@@ -113,10 +115,10 @@ cover:
 climate:
   - platform: nest
 
-weather:
-  - platform: darksky
-    api_key: !secret dark_sky_api_key
-    mode: daily
+# weather:
+#   - platform: darksky
+#     api_key: !secret dark_sky_api_key
+#     mode: daily
 
 emulated_hue:
   host_ip: 10.0.0.7
