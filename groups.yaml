@@ -26,7 +26,7 @@
       - sensor.ring_backyard_volume
       - sensor.ring_backyard_battery
   deadbolt:
-    nane: Garage Deadbolt
+    name: Garage Deadbolt
     entities:
       - sensor.schlage_be469_touchscreen_deadbolt_system_2
       - sensor.schlage_be469_touchscreen_deadbolt_sourcenodeid_2
