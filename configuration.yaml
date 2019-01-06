@@ -95,6 +95,7 @@ ring:
 
 sensor:
   - platform: ring
+    scan_interval: 60
 
 # camera:
 #   - platform: foscam
@@ -111,6 +112,7 @@ cover:
     username: !secret myq_username 
     password: !secret myq_password
     type: chamberlain
+    scan_interval: 30
 
 climate:
   - platform: nest
