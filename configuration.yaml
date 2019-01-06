@@ -126,9 +126,16 @@ emulated_hue:
   expose_by_default: false
   exposed_domains:
     - switch
+    - light
   entities:
-    switch.christmas_tree:
-      name: "Christmas Tree"
+    switch.kitchen:
+      name: "Kitchen"
+      hidden: false
+    light.great_room:
+      name: "Great Lights"
+      hidden: false
+    light.side_lights:
+      name: "Side Lights"
       hidden: false
 
 group: !include groups.yaml
