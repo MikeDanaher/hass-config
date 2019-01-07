@@ -85,10 +85,9 @@ ios:
 
 mqtt:
   broker: 10.0.0.8
-  port: 8883
+  port: 1883
   username: !secret mqtt_username
   password: !secret mqtt_password
-  certificate: /home/ca.crt
 
 nest:
   client_id: !secret nest_client_id

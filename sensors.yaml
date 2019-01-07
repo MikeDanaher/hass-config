@@ -2,11 +2,11 @@
     scan_interval: 60
   - platform: mqtt
     name: 'Main Floor MD'
-    state_topic: "location/main/E4:9A:79:72:67:A4"
+    state_topic: 'location/main/E4:9A:79:72:67:A4'
     value_template: '{{ value_json.confidence }}'
     unit_of_measurement: '%'
   - platform: min_max
-    name: "Home Occupancy Confidence of MDPhone"
+    name: 'Home Occupancy Confidence of MDPhone'
     type: max
     round_digits: 0
     entity_ids:
