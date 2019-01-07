@@ -83,6 +83,13 @@ cloud:
 
 ios:
 
+mqtt:
+  broker: 10.0.0.8
+  port: 8883
+  username: !secret mqtt_username
+  password: !secret mqtt_password
+  certificate: /home/ca.crt
+
 nest:
   client_id: !secret nest_client_id
   client_secret: !secret nest_client_secret
@@ -92,10 +99,6 @@ nest:
 ring:
   username: !secret ring_username
   password: !secret ring_password
-
-sensor:
-  - platform: ring
-    scan_interval: 60
 
 # camera:
 #   - platform: foscam
@@ -140,6 +143,15 @@ emulated_hue:
       name: "Side Lights"
       hidden: false
 
+input_boolean:
+  md_home:
+    name: 'Mike is Home'
+    icon: 'mdi:account-tie'
+  vd_home:
+    name: 'Vickie is Home'
+    icon: 'mdi:account-outline'
+
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
+sensor: !include sensors.yaml

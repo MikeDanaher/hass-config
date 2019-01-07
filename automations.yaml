@@ -9,6 +9,16 @@
         data:
           entity_id: light.side_lights
           brightness_pct: 50
+  - alias: 'Mike is Home'
+    hide_entity: true
+    trigger:
+      - platform: numeric_state
+        entity_id: sensor.home_occupancy_confidence_md
+        above: 10
+    action:
+      - service: homeassistant.turn_on
+        data:
+          entity_id: input_boolean.md_home
   # - alias: 'Christmas Tree On'
   #   trigger:
   #     - platform: sun
