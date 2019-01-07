@@ -29,6 +29,26 @@
       - service: homeassistant.turn_off
         data:
           entity_id: input_boolean.md_home
+  - alias: 'Vickie is Home'
+    hide_entity: true
+    trigger:
+      - platform: numeric_state
+        entity_id: sensor.home_occupancy_confidence_of_vdphone
+        above: 10
+    action:
+      - service: homeassistant.turn_on
+        data:
+          entity_id: input_boolean.md_home
+  - alias: 'Vickie is Away'
+    hide_entity: true
+    trigger:
+      - platform: numeric_state
+        entity_id: sensor.home_occupancy_confidence_of_vdphone
+        below: 10
+    action:
+      - service: homeassistant.turn_off
+        data:
+          entity_id: input_boolean.md_home
   # - alias: 'Christmas Tree On'
   #   trigger:
   #     - platform: sun
