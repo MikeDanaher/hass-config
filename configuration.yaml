@@ -131,15 +131,22 @@ emulated_hue:
   exposed_domains:
     - switch
     - light
+    - script
   entities:
     switch.kitchen:
       name: "Kitchen"
+      hidden: false
+    switch.bedroom:
+      name: "Bedroom"
       hidden: false
     light.great_room:
       name: "Great Lights"
       hidden: false
     light.side_lights:
       name: "Side Lights"
+      hidden: false
+    script.goodnight:
+      name: "For the night"
       hidden: false
 
 input_boolean:

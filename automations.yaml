@@ -38,7 +38,7 @@
     action:
       - service: homeassistant.turn_on
         data:
-          entity_id: input_boolean.md_home
+          entity_id: input_boolean.vd_home
   - alias: 'Vickie is Away'
     hide_entity: true
     trigger:
@@ -48,7 +48,7 @@
     action:
       - service: homeassistant.turn_off
         data:
-          entity_id: input_boolean.md_home
+          entity_id: input_boolean.vd_home
   # - alias: 'Christmas Tree On'
   #   trigger:
   #     - platform: sun

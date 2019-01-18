@@ -1,0 +1,18 @@
+  goodnight:
+    alias: For The Night 
+    sequence:
+      - alias: Side Lights Off 
+        service: light.turn_off
+        data:
+          entity_id: light.side_lights
+      - alias: Great Lights Off 
+        service: light.turn_off
+        data:
+          entity_id: light.great_room
+      - alias: Kitchen Lights Off 
+        service: switch.turn_off
+        entity_id: switch.kitchen
+      - alias: Lock Deadbolt 
+        service: lock.lock
+        data:
+          entity_id: lock.schlage_be469_touchscreen_deadbolt_locked 
