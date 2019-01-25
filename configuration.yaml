@@ -148,6 +148,15 @@ emulated_hue:
     script.goodnight:
       name: "For the night"
       hidden: false
+    script.evening:
+      name: "Evening"
+      hidden: false
+    script.morning:
+      name: "Morning"
+      hidden: false
+    script.garage:
+      name: "Garage"
+      hidden: false
 
 input_boolean:
   md_home:
