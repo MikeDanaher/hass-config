@@ -18,8 +18,19 @@ homeassistant:
     zha:
       hidden: true
 
+zone:
+  - name: Home
+    latitude: !secret home_latitude
+    longitude: !secret home_longitude    
+    radius: 100
+    icon: mdi:home
+    track_ios: false
+
 # Show links to resources in log and frontend
 # introduction:
+
+# Enables new features automatically
+default_config:
 
 # Enables the frontend
 frontend:
@@ -63,6 +74,9 @@ logbook:
 # Enables a map showing the location of tracked devices
 map:
 
+# Connect device tracker entities to one or more person entities
+person:
+
 # HUSBZB-1 USB stick
 zwave:
   usb_path: /dev/ttyUSB0
@@ -86,11 +100,11 @@ cloud:
 
 ios:
 
-mqtt:
-  broker: 10.0.0.8
-  port: 1883
-  username: !secret mqtt_username
-  password: !secret mqtt_password
+# mqtt:
+#   broker: 10.0.0.8
+#   port: 1883
+#   username: !secret mqtt_username
+#   password: !secret mqtt_password
 
 nest:
   client_id: !secret nest_client_id
