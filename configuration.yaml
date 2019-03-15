@@ -18,6 +18,9 @@ homeassistant:
     zha:
       hidden: true
 
+# Enables new features automatically
+default_config:
+
 zone:
   - name: Home
     latitude: !secret home_latitude
@@ -28,9 +31,6 @@ zone:
 
 # Show links to resources in log and frontend
 # introduction:
-
-# Enables new features automatically
-default_config:
 
 # Enables the frontend
 frontend:
@@ -73,9 +73,6 @@ logbook:
 
 # Enables a map showing the location of tracked devices
 map:
-
-# Connect device tracker entities to one or more person entities
-person:
 
 # HUSBZB-1 USB stick
 zwave:
