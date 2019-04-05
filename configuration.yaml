@@ -65,6 +65,10 @@ discovery:
 # Allows you to issue voice commands from the frontend in enabled browsers
 conversation:
 
+# Move database to external system
+recorder:
+  db_url: !secret database_url
+
 # Enables support for tracking state changes over time
 history:
 
