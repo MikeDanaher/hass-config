@@ -9,3 +9,22 @@
         data:
           entity_id: light.side_lights
           brightness_pct: 50
+  - alias: 'Lights on at night Summer'
+    trigger:
+      - platform: time
+        at: '18:15:00'
+    action:
+      - service: switch.turn_on
+        entity_id: switch.kitchen
+      - service: light.turn_on
+        data:
+          entity_id: light.side_lights
+          brightness_pct: 50
+  - alias: 'Lock Garage Door at Night'
+    trigger:
+      - platform: time
+        at: '22:00:00'
+    action:
+      - service: lock.lock
+        data:
+          entity_id: lock.schlage_be469_touchscreen_deadbolt_locked 
