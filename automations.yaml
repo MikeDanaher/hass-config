@@ -20,6 +20,19 @@
         data:
           entity_id: light.side_lights
           brightness_pct: 50
+  - alias: 'Lights off on vacation'
+    trigger:
+      - platform: time
+        at: '22:15:00'
+    action:
+      - service: switch.turn_off
+        entity_id: switch.kitchen
+      - service: light.turn_off
+        data:
+          entity_id: light.side_lights
+      - service: light.turn_off
+        data:
+          entity_id: light.great_room
   - alias: 'Lock Garage Door at Night'
     trigger:
       - platform: time
