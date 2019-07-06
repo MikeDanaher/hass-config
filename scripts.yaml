@@ -42,9 +42,6 @@
       - alias: Kitchen Lights Off
         service: switch.turn_off
         entity_id: switch.kitchen
-      - alias: Bedroom Light On 
-        service: switch.turn_on
-        entity_id: switch.bedroom
   garage:
     alias: Garage 
     sequence:

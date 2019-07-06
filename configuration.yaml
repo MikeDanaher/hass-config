@@ -132,7 +132,7 @@ cover:
     username: !secret myq_username 
     password: !secret myq_password
     type: chamberlain
-    scan_interval: 30
+    scan_interval: 60
 
 climate:
   - platform: nest
@@ -153,9 +153,6 @@ emulated_hue:
   entities:
     switch.kitchen:
       name: "Kitchen"
-      hidden: false
-    switch.bedroom:
-      name: "Bedroom"
       hidden: false
     light.great_room:
       name: "Great Lights"
