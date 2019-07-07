@@ -127,12 +127,12 @@ ring:
 #     input: !secret foscam_2_rtsp_input
 #     name: !secret foscam_2_name
 
-cover:
-  - platform: myq
-    username: !secret myq_username 
-    password: !secret myq_password
-    type: chamberlain
-    scan_interval: 60
+# cover:
+#   - platform: myq
+#     username: !secret myq_username 
+#     password: !secret myq_password
+#     type: chamberlain
+#     scan_interval: 60
 
 climate:
   - platform: nest

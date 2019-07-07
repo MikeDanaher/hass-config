@@ -49,7 +49,3 @@
         service: lock.unlock
         data:
           entity_id: lock.schlage_be469_touchscreen_deadbolt_locked 
-      - alias: Open Garage 
-        service: cover.open_cover
-        data:
-          entity_id: cover.garage_door
