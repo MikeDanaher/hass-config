@@ -1,5 +1,5 @@
-  - platform: ring
-    scan_interval: 60
+  # - platform: ring
+  #   scan_interval: 60
   # - platform: mqtt
   #   name: 'Main Floor MD'
   #   state_topic: 'location/main/E4:9A:79:72:67:A4'

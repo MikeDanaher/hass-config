@@ -1,30 +1,30 @@
-  protect_alarms:
-    name: Protect Alarms
-    view: false 
-    entities:
-      - sensor.hallway_nest_protect_color_status
-      - sensor.family_room_nest_protect_color_status
-      - sensor.upstairs_nest_protect_color_status
-      - sensor.basement_nest_protect_color_status
-  front_door:
-    name: Front Door
-    entities:
-      - sensor.ring_front_door_battery
-      - sensor.ring_front_door_wifi_signal_category
-      - sensor.ring_front_door_wifi_signal_strength
-      - sensor.ring_front_door_last_activity
-      - sensor.ring_front_door_last_ding
-      - sensor.ring_front_door_last_motion
-      - sensor.ring_front_door_volume
-  deck_camera:
-    name: Deck Camera
-    entities:
-      - sensor.ring_backyard_wifi_signal_category
-      - sensor.ring_backyard_wifi_signal_strength
-      - sensor.ring_backyard_last_activity
-      - sensor.ring_backyard_last_motion
-      - sensor.ring_backyard_volume
-      - sensor.ring_backyard_battery
+  # protect_alarms:
+  #   name: Protect Alarms
+  #   view: false 
+  #   entities:
+  #     - sensor.hallway_nest_protect_color_status
+  #     - sensor.family_room_nest_protect_color_status
+  #     - sensor.upstairs_nest_protect_color_status
+  #     - sensor.basement_nest_protect_color_status
+  # front_door:
+  #   name: Front Door
+  #   entities:
+  #     - sensor.ring_front_door_battery
+  #     - sensor.ring_front_door_wifi_signal_category
+  #     - sensor.ring_front_door_wifi_signal_strength
+  #     - sensor.ring_front_door_last_activity
+  #     - sensor.ring_front_door_last_ding
+  #     - sensor.ring_front_door_last_motion
+  #     - sensor.ring_front_door_volume
+  # deck_camera:
+  #   name: Deck Camera
+  #   entities:
+  #     - sensor.ring_backyard_wifi_signal_category
+  #     - sensor.ring_backyard_wifi_signal_strength
+  #     - sensor.ring_backyard_last_activity
+  #     - sensor.ring_backyard_last_motion
+  #     - sensor.ring_backyard_volume
+  #     - sensor.ring_backyard_battery
   deadbolt:
     name: Garage Deadbolt
     entities:
@@ -35,49 +35,49 @@
       - sensor.schlage_be469_touchscreen_deadbolt_alarm_type_2
       - sensor.schlage_be469_touchscreen_deadbolt_alarm_level_2
       - sensor.schlage_be469_touchscreen_deadbolt_access_control_2
-  thermostats:
-    name: Thermostats
-    entities:
-      - sensor.dining_room_thermostat_temperature
-      - sensor.dining_room_thermostat_target
-      - sensor.dining_room_thermostat_operation_mode
-      - sensor.dining_room_thermostat_hvac_state
-      - sensor.dining_room_thermostat_humidity
-      - binary_sensor.dining_room_thermostat_has_leaf
-      - binary_sensor.dining_room_thermostat_is_locked
-      - binary_sensor.dining_room_thermostat_fan
-      - binary_sensor.dining_room_thermostat_is_using_emergency_heat
-      - binary_sensor.dining_room_thermostat_online
-      - sensor.family_room_thermostat_temperature
-      - sensor.family_room_thermostat_target
-      - sensor.family_room_thermostat_operation_mode
-      - sensor.family_room_thermostat_hvac_state
-      - sensor.family_room_thermostat_humidity
-      - binary_sensor.family_room_thermostat_has_leaf
-      - binary_sensor.family_room_thermostat_is_locked
-      - binary_sensor.family_room_thermostat_fan
-      - binary_sensor.family_room_thermostat_is_using_emergency_heat
-      - binary_sensor.family_room_thermostat_online
-      - sensor.home_eta
-  protects:
-    name: Nest Protect
-    entities:
-      - binary_sensor.hallway_nest_protect_online
-      - binary_sensor.family_room_nest_protect_online 
-      - binary_sensor.upstairs_nest_protect_online
-      - binary_sensor.basement_nest_protect_online
-      - sensor.hallway_nest_protect_battery_health
-      - sensor.family_room_nest_protect_battery_health
-      - sensor.upstairs_nest_protect_battery_health
-      - sensor.basement_nest_protect_battery_health
-      - sensor.hallway_nest_protect_smoke_status
-      - sensor.family_room_nest_protect_smoke_status
-      - sensor.upstairs_nest_protect_smoke_status
-      - sensor.basement_nest_protect_smoke_status
-      - sensor.hallway_nest_protect_co_status
-      - sensor.family_room_nest_protect_co_status
-      - sensor.upstairs_nest_protect_co_status
-      - sensor.basement_nest_protect_co_status
+  # thermostats:
+  #   name: Thermostats
+  #   entities:
+  #     - sensor.dining_room_thermostat_temperature
+  #     - sensor.dining_room_thermostat_target
+  #     - sensor.dining_room_thermostat_operation_mode
+  #     - sensor.dining_room_thermostat_hvac_state
+  #     - sensor.dining_room_thermostat_humidity
+  #     - binary_sensor.dining_room_thermostat_has_leaf
+  #     - binary_sensor.dining_room_thermostat_is_locked
+  #     - binary_sensor.dining_room_thermostat_fan
+  #     - binary_sensor.dining_room_thermostat_is_using_emergency_heat
+  #     - binary_sensor.dining_room_thermostat_online
+  #     - sensor.family_room_thermostat_temperature
+  #     - sensor.family_room_thermostat_target
+  #     - sensor.family_room_thermostat_operation_mode
+  #     - sensor.family_room_thermostat_hvac_state
+  #     - sensor.family_room_thermostat_humidity
+  #     - binary_sensor.family_room_thermostat_has_leaf
+  #     - binary_sensor.family_room_thermostat_is_locked
+  #     - binary_sensor.family_room_thermostat_fan
+  #     - binary_sensor.family_room_thermostat_is_using_emergency_heat
+  #     - binary_sensor.family_room_thermostat_online
+  #     - sensor.home_eta
+  # protects:
+  #   name: Nest Protect
+  #   entities:
+  #     - binary_sensor.hallway_nest_protect_online
+  #     - binary_sensor.family_room_nest_protect_online 
+  #     - binary_sensor.upstairs_nest_protect_online
+  #     - binary_sensor.basement_nest_protect_online
+  #     - sensor.hallway_nest_protect_battery_health
+  #     - sensor.family_room_nest_protect_battery_health
+  #     - sensor.upstairs_nest_protect_battery_health
+  #     - sensor.basement_nest_protect_battery_health
+  #     - sensor.hallway_nest_protect_smoke_status
+  #     - sensor.family_room_nest_protect_smoke_status
+  #     - sensor.upstairs_nest_protect_smoke_status
+  #     - sensor.basement_nest_protect_smoke_status
+  #     - sensor.hallway_nest_protect_co_status
+  #     - sensor.family_room_nest_protect_co_status
+  #     - sensor.upstairs_nest_protect_co_status
+  #     - sensor.basement_nest_protect_co_status
   # peanut_plug:
   #   name: Peanut Plug
   #   entities:
@@ -87,9 +87,9 @@
     name: Status
     view: true
     entities:
-      - group.front_door
-      - group.deck_camera
+      # - group.front_door
+      # - group.deck_camera
       - group.deadbolt
-      - group.thermostats
-      - group.protects
+      # - group.thermostats
+      # - group.protects
   #     - group.peanut_plug

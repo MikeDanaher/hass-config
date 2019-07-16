@@ -107,15 +107,15 @@ ios:
 #   username: !secret mqtt_username
 #   password: !secret mqtt_password
 
-nest:
-  client_id: !secret nest_client_id
-  client_secret: !secret nest_client_secret
-  structure:
-    - Home
+# nest:
+#   client_id: !secret nest_client_id
+#   client_secret: !secret nest_client_secret
+#   structure:
+#     - Home
 
-ring:
-  username: !secret ring_username
-  password: !secret ring_password
+# ring:
+#   username: !secret ring_username
+#   password: !secret ring_password
 
 # camera:
 #   - platform: foscam
@@ -134,8 +134,8 @@ ring:
 #     type: chamberlain
 #     scan_interval: 60
 
-climate:
-  - platform: nest
+# climate:
+#   - platform: nest
 
 # weather:
 #   - platform: darksky
