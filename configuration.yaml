@@ -175,14 +175,9 @@ emulated_hue:
 
 lifx:
   light:
-    server: 10.0.0.7
-    broadcast: 10.0.0.181 
-  light:
-    server: 10.0.0.7
-    broadcast: 10.0.0.182 
-  light:
-    server: 10.0.0.7
-    broadcast: 10.0.0.184 
+    - broadcast: 10.0.0.181 
+    - broadcast: 10.0.0.182 
+    - broadcast: 10.0.0.184 
 
 # input_boolean:
 #   md_home:
