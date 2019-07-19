@@ -90,14 +90,8 @@ zha:
 # Track the sun
 sun:
 
-# Text to speech
-# tts:
-#   - platform: google
-
 # Cloud
 cloud:
-
-# ffmpeg:
 
 ios:
 
@@ -117,16 +111,6 @@ ios:
 #   username: !secret ring_username
 #   password: !secret ring_password
 
-# camera:
-#   - platform: foscam
-#     name: !secret foscam_1_name
-#     ip: !secret foscam_1_ip
-#     username: !secret foscam_1_username
-#     password: !secret foscam_1_password
-#   - platform: ffmpeg
-#     input: !secret foscam_2_rtsp_input
-#     name: !secret foscam_2_name
-
 # cover:
 #   - platform: myq
 #     username: !secret myq_username 
@@ -136,11 +120,6 @@ ios:
 
 # climate:
 #   - platform: nest
-
-# weather:
-#   - platform: darksky
-#     api_key: !secret dark_sky_api_key
-#     mode: daily
 
 emulated_hue:
   host_ip: 10.0.0.7
@@ -179,13 +158,8 @@ lifx:
     - broadcast: 10.0.0.182 
     - broadcast: 10.0.0.184 
 
-# input_boolean:
-#   md_home:
-#     name: 'Mike is Home'
-#     icon: 'mdi:account'
-#   vd_home:
-#     name: 'Vickie is Home'
-#     icon: 'mdi:account-outline'
+homekit:
+  auto_start: false  
 
 group: !include groups.yaml
 automation: !include automations.yaml

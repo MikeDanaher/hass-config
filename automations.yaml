@@ -41,3 +41,13 @@
       - service: lock.lock
         data:
           entity_id: lock.schlage_be469_touchscreen_deadbolt_locked 
+  - alias: 'Start HomeKit'
+    trigger:
+      - platform: event
+        event_type: zwave.network_ready
+      - platform: event
+        event_type: zwave.network_complete
+      - platform: event
+        event_type: zwave.network_complete_some_dead
+    action:
+      - service: homekit.start
