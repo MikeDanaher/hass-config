@@ -160,6 +160,14 @@ lifx:
 
 homekit:
   auto_start: false  
+  filter:
+    exclude_domains:
+      - device_tracker
+    exclude_entities:
+      - automation.start_homekit
+      - light.mikes_light
+      - light.vickies_light
+      - light.owens_light
 
 group: !include groups.yaml
 automation: !include automations.yaml
